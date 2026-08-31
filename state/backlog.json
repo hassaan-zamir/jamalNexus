@@ -1,0 +1,210 @@
+{
+  "tasks": [
+    {
+      "task_id": "T001",
+      "project": "P1",
+      "title": "Environment + project template",
+      "skill_focus": [
+        "restraint"
+      ],
+      "brief": "Install/verify Premiere, ffmpeg, python3. Build the standard .prproj template: bins (footage/audio/graphics/sequences/exports), colour labels, 1080p24 and 1080p30 sequence presets, autosave + scratch config.",
+      "acceptance": [
+        "template opens clean",
+        "both sequence presets present",
+        "ffmpeg -version and python3 --version run",
+        "template committed to projects/P1/"
+      ],
+      "est_hours": 6,
+      "status": "PENDING",
+      "created_by": "seed"
+    },
+    {
+      "task_id": "T002",
+      "project": "P1",
+      "title": "Keyboard-only assembly drill",
+      "skill_focus": [
+        "rhythm"
+      ],
+      "brief": "Learn J/K/L, in/out, insert vs overwrite, ripple/roll/slip/slide. Assemble a 60s sequence from 20 supplied clips without touching the mouse, three times, timed.",
+      "acceptance": [
+        "third attempt under 12 minutes",
+        "attempt times logged",
+        "can name what ripple vs roll does without looking"
+      ],
+      "est_hours": 6,
+      "status": "PENDING",
+      "created_by": "seed"
+    },
+    {
+      "task_id": "T003",
+      "project": "P1",
+      "title": "First teardown: Company Man",
+      "skill_focus": [
+        "rhythm",
+        "restraint"
+      ],
+      "brief": "Full teardown of one Company Man video using the CSV schema in skills/teardown-coach.md. Every cut logged.",
+      "acceptance": [
+        "CSV has one row per cut (expect 120+)",
+        "median shot length and cuts/min computed",
+        "3 written observations about restraint"
+      ],
+      "est_hours": 5,
+      "status": "PENDING",
+      "created_by": "seed"
+    },
+    {
+      "task_id": "T004",
+      "project": "P1",
+      "title": "Rhythm triptych",
+      "skill_focus": [
+        "rhythm"
+      ],
+      "brief": "Cut the same 60s material three ways: avg 1.8s shots, 3.5s, 6s. Read Murch ch.1-3 first.",
+      "acceptance": [
+        "three exports delivered",
+        "200 words on what changed emotionally",
+        "can state Murch's Rule of Six from memory"
+      ],
+      "est_hours": 6,
+      "status": "PENDING",
+      "created_by": "seed"
+    },
+    {
+      "task_id": "T005",
+      "project": "P1",
+      "title": "Loudness literacy",
+      "skill_focus": [
+        "sound"
+      ],
+      "brief": "LUFS vs peak vs RMS. Measure 10 reference videos' loudness with tools/loudness_check.py. Record findings.",
+      "acceptance": [
+        "10 measurements logged with channel names",
+        "can explain why -16 LUFS is the narration target",
+        "knows what true peak is"
+      ],
+      "est_hours": 4,
+      "status": "PENDING",
+      "created_by": "seed"
+    },
+    {
+      "task_id": "T006",
+      "project": "P1",
+      "title": "Narration chain preset",
+      "skill_focus": [
+        "sound"
+      ],
+      "brief": "Build the house narration chain as a saved Premiere preset: denoise, de-ess, HPF 80Hz, +2dB @3.5kHz, comp 3:1, limiter. Apply to 3 voice samples.",
+      "acceptance": [
+        "preset file saved to library/specs/",
+        "3 before/after exports pass loudness_check --type narration",
+        "each stage's purpose explained in one line"
+      ],
+      "est_hours": 6,
+      "status": "PENDING",
+      "created_by": "seed"
+    },
+    {
+      "task_id": "T007",
+      "project": "P1",
+      "title": "Ducking + bed placement",
+      "skill_focus": [
+        "sound"
+      ],
+      "brief": "Sidechain ducking: bed at -24 LUFS, 6-8dB duck under narration. Fix a badly mixed 2-minute segment from the target episode.",
+      "acceptance": [
+        "fixed segment passes loudness checks",
+        "duck depth measured and stated",
+        "no pumping audible (dev spot-check)"
+      ],
+      "est_hours": 5,
+      "status": "PENDING",
+      "created_by": "seed"
+    },
+    {
+      "task_id": "T008",
+      "project": "P1",
+      "title": "First SFX batch",
+      "skill_focus": [
+        "sound"
+      ],
+      "brief": "Source/edit 20 SFX (impacts, whooshes, UI ticks, paper). Trim, normalise -18 LUFS, name per convention, write licence sidecars.",
+      "acceptance": [
+        "all 20 pass validate_asset.py",
+        "all pass loudness_check --type sfx",
+        "licences verified and recorded"
+      ],
+      "est_hours": 7,
+      "status": "PENDING",
+      "created_by": "seed"
+    },
+    {
+      "task_id": "T009",
+      "project": "P1",
+      "title": "Room tone library",
+      "skill_focus": [
+        "sound"
+      ],
+      "brief": "Build 5 x 60s loopable room-tone/air beds. Study why premium edits never contain digital silence.",
+      "acceptance": [
+        "5 beds pass validation as amb_*",
+        "seamless loop verified by ear at the join",
+        "one paragraph: where each bed suits"
+      ],
+      "est_hours": 4,
+      "status": "PENDING",
+      "created_by": "seed"
+    },
+    {
+      "task_id": "T010",
+      "project": "P1",
+      "title": "P1 ship: full audio re-master",
+      "skill_focus": [
+        "sound",
+        "rhythm"
+      ],
+      "brief": "The capstone: re-master the full target episode's audio using everything above. This ships.",
+      "acceptance": [
+        "master passes -16 LUFS / -1 dBTP",
+        "dev A/B signoff recorded in dev/changelog.md",
+        "self+ustaad rubric scores logged"
+      ],
+      "est_hours": 10,
+      "status": "PENDING",
+      "created_by": "seed"
+    },
+    {
+      "task_id": "T011",
+      "project": "P3",
+      "title": "Shot matching drill",
+      "skill_focus": [
+        "colour"
+      ],
+      "brief": "Match 10 clips from 10 different sources to one reference frame using Lumetri. This is the archive-footage problem in miniature.",
+      "acceptance": [
+        "contact sheet of 10 matched stills",
+        "dev picks the 2 weakest matches; he re-does them"
+      ],
+      "est_hours": 6,
+      "status": "PENDING",
+      "created_by": "seed"
+    },
+    {
+      "task_id": "T012",
+      "project": "P3",
+      "title": "First LUT, verified through ffmpeg",
+      "skill_focus": [
+        "colour"
+      ],
+      "brief": "Build one 33-point .cube LUT and verify it through ffmpeg lut3d, not just Premiere preview.",
+      "acceptance": [
+        "lut_*.cube passes validate_asset.py",
+        "ffmpeg command + output frame shown",
+        "before/after stills exported"
+      ],
+      "est_hours": 5,
+      "status": "PENDING",
+      "created_by": "seed"
+    }
+  ]
+}
