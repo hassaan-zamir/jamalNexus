@@ -1,0 +1,26 @@
+{
+  "_comment": "Copy to config/daemon.json and fill. daemon.json is gitignored — it holds secrets.",
+  "quiet": false,
+  "discord": {
+    "webhook_url": "",
+    "bot_token": "",
+    "guild_id": "",
+    "dev_user_id": "",
+    "trainee_user_id": ""
+  },
+  "schedule": {
+    "briefing_time": "09:00",
+    "idle_nudge_time": "11:00",
+    "idle_escalate_time": "14:00",
+    "workday_end": "19:00",
+    "weekly_report_day": 5,
+    "weekly_report_time": "18:00",
+    "deadline_warn_minutes": 120,
+    "overdue_repeat_minutes": 60,
+    "poll_seconds": 60
+  },
+  "claude_cli": {
+    "command": ["claude", "-p"],
+    "timeout_seconds": 600
+  }
+}
